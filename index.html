@@ -1,0 +1,889 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Muhammed Sinan Aneefa — Full Stack Developer &amp; AI/ML Engineer</title>
+    <meta name="description" content="Portfolio of Muhammed Sinan Aneefa — Full Stack Developer and AI/ML Engineer specializing in Python, Django, React, Next.js, and PyTorch. Building intelligent, high-impact systems." />
+    <meta name="keywords" content="Muhammed Sinan Aneefa, Full Stack Developer, AI/ML Engineer, Python, Django, React, Next.js, PyTorch, Portfolio, Bangalore" />
+    <meta name="author" content="Muhammed Sinan Aneefa" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Muhammed Sinan Aneefa — Full Stack Developer &amp; AI/ML Engineer" />
+    <meta property="og:description" content="Building scalable full-stack applications and AI systems with modern architecture." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23000000'/%3E%3Ccircle cx='16' cy='16' r='12' fill='%23ff2a2a'/%3E%3Ctext x='16' y='21' font-size='14' font-weight='900' font-family='sans-serif' text-anchor='middle' fill='%23ffffff'%3EM%3C/text%3E%3C/svg%3E" />
+    
+    <!-- Google Fonts: Inter, Outfit, Caveat, Fira Code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-black text-white font-sans overflow-x-hidden selection:bg-[#ff2a2a] selection:text-white">
+
+    <!-- Fixed Left Social Rail (with mix-blend-difference) -->
+    <div class="fixed-social-rail">
+        <a href="https://github.com/sinananeefa" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/muhammed-sinan-aneefa-08bb61269" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+        <a href="mailto:sinanhaneef09@gmail.com" class="social-icon" aria-label="Email">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        </a>
+        <div class="social-line"></div>
+    </div>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="header-nav" id="headerNav">
+        <div class="nav-inner">
+            <a href="#hero" class="brand-logo">
+                <span class="brand-initials">MSA</span>
+                <span class="brand-dot">.</span>
+            </a>
+
+            <nav class="desktop-nav" id="desktopNav">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#skills" class="nav-link">Skillset</a>
+                <a href="#process" class="nav-link">Process</a>
+                <a href="#projects" class="nav-link">Work</a>
+                <a href="#achievements" class="nav-link">Awards</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="Full-Stack-Developer.pdf" target="_blank" download class="btn-cv-pill">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                    <span>Resume</span>
+                </a>
+                <button class="menu-toggle-btn" id="menuToggleBtn" aria-label="Toggle Menu">
+                    <span class="bar bar-1"></span>
+                    <span class="bar bar-2"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="mobile-drawer-inner">
+            <a href="#about" class="drawer-link">About</a>
+            <a href="#experience" class="drawer-link">Experience</a>
+            <a href="#skills" class="drawer-link">Skillset</a>
+            <a href="#process" class="drawer-link">Process</a>
+            <a href="#projects" class="drawer-link">Work</a>
+            <a href="#achievements" class="drawer-link">Awards</a>
+            <a href="#contact" class="drawer-link">Contact</a>
+            <a href="Full-Stack-Developer.pdf" target="_blank" download class="drawer-cv-btn">Download Resume (PDF)</a>
+            <div class="drawer-social-row">
+                <a href="https://github.com/sinananeefa" target="_blank" rel="noopener noreferrer" class="drawer-social-link" aria-label="GitHub">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/></svg>
+                </a>
+                <a href="https://linkedin.com/in/muhammed-sinan-aneefa-08bb61269" target="_blank" rel="noopener noreferrer" class="drawer-social-link" aria-label="LinkedIn">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+                <a href="mailto:sinanhaneef09@gmail.com" class="drawer-social-link" aria-label="Email">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 1. HERO SECTION (With Interactive Animated Canvas & Play Reel Toggle) -->
+    <section id="hero" class="hero-section">
+        <!-- Interactive Cyber Background Canvas -->
+        <canvas id="heroCanvas" class="hero-canvas"></canvas>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-container">
+            <div class="hero-text-block">
+                <!-- Mobile Social Links -->
+                <div class="hero-mobile-socials">
+                    <a href="https://github.com/sinananeefa" target="_blank" rel="noopener noreferrer" class="m-soc-link" aria-label="GitHub">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/></svg>
+                    </a>
+                    <a href="https://linkedin.com/in/muhammed-sinan-aneefa-08bb61269" target="_blank" rel="noopener noreferrer" class="m-soc-link" aria-label="LinkedIn">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                </div>
+
+                <!-- Status Pill -->
+                <div class="hero-live-badge">
+                    <span class="pulse-indicator"></span>
+                    <span>Available for Full-Stack &amp; AI Roles &bull; Bangalore</span>
+                </div>
+
+                <!-- Main Hero Titles -->
+                <h1 class="hero-main-title">
+                    Hello, I'm <br>
+                    <span class="stroke-title">MUHAMMED SINAN</span>
+                </h1>
+
+                <p class="hero-subtitle-text">
+                    Full Stack Developer &amp; AI/ML Engineer architecting scalable web applications, RESTful microservices, and deep learning architectures with Python, Django, React, Next.js, and PyTorch.
+                </p>
+
+                <!-- Hero CTA Buttons -->
+                <div class="hero-btn-row">
+                    <a href="#projects" class="btn-hero-primary">Explore Work</a>
+                    <a href="#contact" class="btn-hero-outline">Contact Me</a>
+                    <a href="Full-Stack-Developer.pdf" target="_blank" download class="btn-hero-resume">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                        <span>Download CV</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Interactive Reel / Animation Control Button -->
+            <div class="hero-reel-control" id="reelControlBtn" title="Toggle Interactive Background Animation">
+                <div class="reel-button-ring">
+                    <svg class="w-6 h-6 text-white play-icon" id="playIcon" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    <svg class="w-6 h-6 text-white pause-icon hidden" id="pauseIcon" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                </div>
+                <span class="reel-button-label" id="reelLabel">Live Matrix</span>
+            </div>
+        </div>
+
+        <!-- Bouncing Down Scroll Arrow -->
+        <a href="#about" class="hero-scroll-indicator" aria-label="Scroll to About">
+            <div class="bounce-arrow">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+            </div>
+        </a>
+    </section>
+
+    <!-- 2. ABOUT SECTION (Featuring the Signature Hanging ID Card Badge) -->
+    <section id="about" class="about-hero-banner">
+        <!-- Floating Abstract Stars -->
+        <div class="star-decor star-top-right">
+            <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0l2.5 8.5L23 12l-8.5 2.5L12 23l-2.5-8.5L1 12l8.5-2.5z"/></svg>
+        </div>
+        <div class="star-decor star-bottom-left">
+            <svg class="w-20 h-20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0l2.5 8.5L23 12l-8.5 2.5L12 23l-2.5-8.5L1 12l8.5-2.5z"/></svg>
+        </div>
+
+        <div class="about-container">
+            <!-- Hanging ID Card Badge with Real Photo -->
+            <div class="hanging-badge-wrapper">
+                <div class="badge-strap"></div>
+                <div class="badge-metal-clasp"></div>
+                
+                <div class="badge-id-card">
+                    <div class="badge-hanger-hole">
+                        <div class="badge-slot"></div>
+                    </div>
+                    <div class="badge-photo-frame">
+                        <img src="profile.jpeg" alt="Muhammed Sinan Aneefa" class="badge-photo" />
+                    </div>
+                    <div class="badge-info">
+                        <h4 class="badge-name">MUHAMMED SINAN ANEEFA</h4>
+                        <span class="badge-role">Full Stack &amp; AI/ML Engineer</span>
+                        <div class="badge-dept">B.E. AIML &bull; CGPA 8.29</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Text & Bio Content -->
+            <div class="about-content-col">
+                <span class="about-eyebrow">Who I Am</span>
+                <h2 class="about-headline">Engineering Scalable Systems Across Full-Stack &amp; AI</h2>
+                <div class="about-bio-text">
+                    <p>
+                        I am a <strong>Full Stack Developer and AI/ML Engineer</strong> with hands-on experience developing production-grade web applications and high-performance machine learning systems.
+                    </p>
+                    <p>
+                        My engineering spans <strong>Django, Django REST Framework, React, and Next.js</strong> for end-to-end web services, combined with <strong>Deep Learning, NLP, Computer Vision, and Generative AI (RAG, LangChain)</strong> using TensorFlow and PyTorch.
+                    </p>
+                    <p>
+                        With a solid foundation in <strong>PostgreSQL, MySQL, Docker containerization, and AWS pipelines</strong>, I deliver reliable, scalable solutions with proven hackathon impact—including winning the <strong>Microsoft Problem Statement</strong> as Runner-Up in the ISTE Hackathon 2025.
+                    </p>
+                </div>
+
+                <!-- Interactive Tech Pillars -->
+                <div class="tech-pillars-row">
+                    <div class="tech-pillar-item" title="Python & Django Architecture">
+                        <div class="pillar-icon-box">🐍</div>
+                        <span class="pillar-title">Python &amp; Django</span>
+                    </div>
+                    <div class="tech-pillar-item" title="React & Next.js Frontend">
+                        <div class="pillar-icon-box">⚛️</div>
+                        <span class="pillar-title">React &amp; Next.js</span>
+                    </div>
+                    <div class="tech-pillar-item" title="Deep Learning & AI/ML">
+                        <div class="pillar-icon-box">🧠</div>
+                        <span class="pillar-title">PyTorch &amp; AI/ML</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Curving Bottom Wave Divider -->
+        <div class="curved-wave-divider">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="w-full h-16 md:h-24 fill-[#0a0a0a]">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.08,130.83,119.62,189.5,99.8,242.79,81.82,282.88,63.6,321.39,56.44Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- 3. PROFESSIONAL EXPERIENCE SECTION -->
+    <section id="experience" class="exp-section">
+        <div class="section-ambient-glow glow-red-left"></div>
+        <div class="max-w-6xl mx-auto px-6 relative z-10">
+            <div class="section-title-center">
+                <div class="sub-pill">Work Experience</div>
+                <h2 class="section-heading-white">Professional Journey</h2>
+                <p class="section-sub-desc">Practical industry software engineering applied to full-stack pipelines and model serving.</p>
+            </div>
+
+            <div class="exp-card-wrapper">
+                <div class="exp-card">
+                    <div class="exp-card-header">
+                        <div class="exp-role-title">
+                            <span class="exp-status-chip">Current Experience</span>
+                            <h3>Full Stack Intern</h3>
+                            <h4>Emdata Networks Private Limited</h4>
+                        </div>
+                        <div class="exp-period-badge">
+                            <span>April 2026 &ndash; Present</span>
+                        </div>
+                    </div>
+
+                    <ul class="exp-bullets">
+                        <li>
+                            <strong>Object-Oriented Web Engineering:</strong> Applied Python and OOP to build and structure web applications, reinforcing core data structures, debugging, and unit testing practices used throughout AI/ML development.
+                        </li>
+                        <li>
+                            <strong>RESTful APIs &amp; JWT Security:</strong> Built and consumed RESTful APIs using Django REST Framework (DRF), implementing CRUD operations and JWT-based authentication &mdash; directly transferable to serving and integrating ML models in production.
+                        </li>
+                        <li>
+                            <strong>Relational Data Modeling:</strong> Designed and queried relational databases in PostgreSQL and MySQL using Django ORM, gaining practical experience in data modeling, data cleaning, and pipeline fundamentals.
+                        </li>
+                        <li>
+                            <strong>Full-Stack &amp; DevOps:</strong> Worked across the stack (Django, React with Hooks &amp; Context API), containerizing components with Docker and gaining exposure to AWS deployment and CI/CD pipelines.
+                        </li>
+                        <li>
+                            <strong>Agile Standards:</strong> Practiced version control (Git/GitHub) and software development best practices throughout the full product lifecycle.
+                        </li>
+                    </ul>
+
+                    <div class="exp-tags-row">
+                        <span>Python</span>
+                        <span>Django REST Framework</span>
+                        <span>React</span>
+                        <span>PostgreSQL</span>
+                        <span>MySQL</span>
+                        <span>Docker</span>
+                        <span>AWS</span>
+                        <span>Git/GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. TECHNICAL SKILLSET SECTION (With Animated Interactive Progress Bars) -->
+    <section id="skills" class="skills-section">
+        <div class="section-ambient-glow glow-red-right"></div>
+        
+        <div class="max-w-6xl mx-auto px-6 relative z-10">
+            <div class="section-title-center">
+                <div class="sub-pill">Technical Stack</div>
+                <h2 class="section-heading-white">My Skillset</h2>
+                <p class="section-sub-desc">A comprehensive overview of programming languages, frameworks, databases, and engineering competencies.</p>
+            </div>
+
+            <div class="skills-category-grid">
+                <!-- 1. AI & Machine Learning -->
+                <div class="skill-group-card">
+                    <h3 class="skill-group-title">AI, ML &amp; Data Analysis</h3>
+                    <div class="skill-bars-list">
+                        <div class="skill-bar-item">
+                            <div class="sb-header"><span>Machine Learning &amp; Deep Learning</span><span class="sb-percent">95%</span></div>
+                            <div class="sb-track"><div class="sb-fill" style="--level: 95%;"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="sb-header"><span>NLP &amp; Computer Vision (OpenCV)</span><span class="sb-percent">90%</span></div>
+                            <div class="sb-track"><div class="sb-fill" style="--level: 90%;"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="sb-header"><span>TensorFlow &amp; PyTorch</span><span class="sb-percent">92%</span></div>
+                            <div class="sb-track"><div class="sb-fill" style="--level: 92%;"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="sb-header"><span>Generative AI, LangChain &amp; RAG</span><span class="sb-percent">88%</span></div>
+                            <div class="sb-track"><div class="sb-fill" style="--level: 88%;"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="sb-header"><span>NumPy, Pandas, Matplotlib &amp; Power BI</span><span class="sb-percent">94%</span></div>
+                            <div class="sb-track"><div class="sb-fill" style="--level: 94%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Backend & APIs -->
+                <div class="skill-group-card">
+                    <h3 class="skill-group-title">Backend &amp; API Architecture</h3>
+                    <div class="skill-bars-list">
+                        <div class="skill-bar-item">
+                            <div class="sb-header"><span>Django &amp; Django REST Framework</span><span class="sb-percent">95%</span></div>
+                            <div class="sb-track"><div class="sb-fill" style="--level: 95%;"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="sb-header"><span>Python (OOP &amp; Data Structures)</span><span class="sb-percent">96%</span></div>
+                            <div class="sb-track"><div class="sb-fill" style="--level: 96%;"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="sb-header"><span>JWT Authentication &amp; RESTful APIs</span><span class="sb-percent">92%</span></div>
+                            <div class="sb-track"><div class="sb-fill" style="--level: 92%;"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="sb-header"><span>Flask &amp; Microservices</span><span class="sb-percent">85%</span></div>
+                            <div class="sb-track"><div class="sb-fill" style="--level: 85%;"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="sb-header"><span>Unit Testing &amp; API Debugging</span><span class="sb-percent">90%</span></div>
+                            <div class="sb-track"><div class="sb-fill" style="--level: 90%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Frontend Development -->
+                <div class="skill-group-card">
+                    <h3 class="skill-group-title">Frontend Engineering</h3>
+                    <div class="skill-bars-list">
+                        <div class="skill-bar-item">
+                            <div class="sb-header"><span>React.js &amp; Next.js</span><span class="sb-percent">92%</span></div>
+                            <div class="sb-track"><div class="sb-fill" style="--level: 92%;"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="sb-header"><span>JavaScript (ES6+)</span><span class="sb-percent">94%</span></div>
+                            <div class="sb-track"><div class="sb-fill" style="--level: 94%;"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="sb-header"><span>Tailwind CSS &amp; Modern UI/UX</span><span class="sb-percent">95%</span></div>
+                            <div class="sb-track"><div class="sb-fill" style="--level: 95%;"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="sb-header"><span>Three.js (3D Web Virtual Avatars)</span><span class="sb-percent">82%</span></div>
+                            <div class="sb-track"><div class="sb-fill" style="--level: 82%;"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="sb-header"><span>React Hooks &amp; Context API</span><span class="sb-percent">92%</span></div>
+                            <div class="sb-track"><div class="sb-fill" style="--level: 92%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Databases & Cloud Tools -->
+                <div class="skill-group-card">
+                    <h3 class="skill-group-title">Databases &amp; DevOps</h3>
+                    <div class="skill-bars-list">
+                        <div class="skill-bar-item">
+                            <div class="sb-header"><span>PostgreSQL &amp; MySQL (Django ORM)</span><span class="sb-percent">94%</span></div>
+                            <div class="sb-track"><div class="sb-fill" style="--level: 94%;"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="sb-header"><span>Docker &amp; Containerization</span><span class="sb-percent">88%</span></div>
+                            <div class="sb-track"><div class="sb-fill" style="--level: 88%;"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="sb-header"><span>AWS &amp; CI/CD Pipelines</span><span class="sb-percent">84%</span></div>
+                            <div class="sb-track"><div class="sb-fill" style="--level: 84%;"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="sb-header"><span>MongoDB</span><span class="sb-percent">86%</span></div>
+                            <div class="sb-track"><div class="sb-fill" style="--level: 86%;"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="sb-header"><span>Git &amp; GitHub Version Control</span><span class="sb-percent">96%</span></div>
+                            <div class="sb-track"><div class="sb-fill" style="--level: 96%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. INTERACTIVE DEVELOPMENT PROCESS (Pinned Cards with Sinuous Path & Interactive Reveal) -->
+    <section id="process" class="process-section">
+        <div class="process-container">
+            <div class="process-header-box">
+                <div class="sub-pill-dark">Methodology</div>
+                <h2 class="process-heading">How I Build <br>Scalable Systems</h2>
+                <p class="process-desc">From initial problem discovery and relational database schema design to containerized cloud deployment and AI fine-tuning.</p>
+            </div>
+
+            <div class="process-cards-flow">
+                <!-- Step 01 -->
+                <div class="pinned-step-card card-rotate-1">
+                    <div class="pin-screw"></div>
+                    <div class="step-card-content">
+                        <span class="step-num">01</span>
+                        <h3 class="step-title">Architecture &amp; Data Design</h3>
+                        <p class="step-desc">Establish strict relational models in PostgreSQL/MySQL, defining atomic database transactions, entity relationships, and core OOP patterns.</p>
+                    </div>
+                </div>
+
+                <!-- Step 02 -->
+                <div class="pinned-step-card card-rotate-2">
+                    <div class="pin-screw"></div>
+                    <div class="step-card-content">
+                        <span class="step-num">02</span>
+                        <h3 class="step-title">API &amp; AI Model Serving</h3>
+                        <p class="step-desc">Develop secure RESTful endpoints via Django REST Framework, integrating JWT authentication and connecting ML inference pipelines.</p>
+                    </div>
+                </div>
+
+                <!-- Step 03 -->
+                <div class="pinned-step-card card-rotate-3">
+                    <div class="pin-screw"></div>
+                    <div class="step-card-content">
+                        <span class="step-num">03</span>
+                        <h3 class="step-title">Interactive Responsive UI</h3>
+                        <p class="step-desc">Craft client-side web applications using React.js, Next.js, and Tailwind CSS, integrating real-time speech recognition and Three.js 3D avatars.</p>
+                    </div>
+                </div>
+
+                <!-- Step 04 -->
+                <div class="pinned-step-card card-rotate-4">
+                    <div class="pin-screw"></div>
+                    <div class="step-card-content">
+                        <span class="step-num">04</span>
+                        <h3 class="step-title">CI/CD, Docker &amp; Cloud Launch</h3>
+                        <p class="step-desc">Containerize application components with Docker, execute unit test suites, and deploy live on cloud infrastructure (AWS, Vercel, Render).</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="process-signature-note">
+                <span>// Ready for production deployment</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. FEATURED WORK & LIVE DEPLOYMENTS SECTION -->
+    <section id="projects" class="work-section">
+        <div class="max-w-6xl mx-auto px-6 relative z-10">
+            <div class="section-title-left">
+                <div class="sub-pill">Featured Projects</div>
+                <h2 class="work-big-title">Work that speaks <br class="hidden md:block">for itself</h2>
+                <p class="section-sub-desc">Real deployed web platforms, artificial intelligence systems, and full-stack applications with live URLs.</p>
+            </div>
+
+            <div class="projects-list-stack">
+                
+                <!-- 01: Talkeasy (ISTE Hackathon Winner) -->
+                <div class="flagship-project-card">
+                    <div class="project-inner-card">
+                        <div class="project-card-header">
+                            <span class="proj-badge">🏆 ISTE Hackathon Winner &bull; Microsoft Challenge</span>
+                            <span class="live-dot-badge"><span class="pulse-green"></span> Live Deployment</span>
+                        </div>
+                        <div class="proj-number-title">
+                            <span class="proj-num">01</span>
+                            <h3 class="proj-title">Talkeasy — AI Language Learning Platform</h3>
+                        </div>
+                        <p class="proj-desc">
+                            Advanced AI-driven language learning platform with personalized games, real-time pronunciation scoring, story narration, AI conversational practice, grammar correction, and document translation. Integrates an interactive 3D virtual assistant via Three.js for immersive TTS/STT and an adaptive "TraceIt" alphabet module.
+                        </p>
+                        <div class="proj-tags">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>Next.js</span>
+                            <span>Tailwind CSS</span>
+                            <span>Three.js</span>
+                            <span>NLP</span>
+                            <span>STT/TTS</span>
+                        </div>
+                        <div class="proj-buttons">
+                            <a href="https://github.com/sinananeefa" target="_blank" rel="noopener noreferrer" class="btn-proj-git">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/></svg>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://talk-lemon.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-proj-live">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                                <span>Live Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 02: Virtual Nurse Assistant -->
+                <div class="project-stack-card">
+                    <div class="project-inner-card">
+                        <div class="project-card-header">
+                            <span class="proj-badge">🏥 Healthcare AI System</span>
+                            <span class="live-dot-badge"><span class="pulse-green"></span> Live Deployment</span>
+                        </div>
+                        <div class="proj-number-title">
+                            <span class="proj-num">02</span>
+                            <h3 class="proj-title">Virtual Nurse Assistant (AR-NurSys)</h3>
+                        </div>
+                        <p class="proj-desc">
+                            AI-powered virtual healthcare assistant acting as a patient's immediate point of contact at home. Guides users through automated symptom analysis, provides preliminary clinical insights, and manages medication adherence reminders via real-time speech recognition and approachable 3D avatars.
+                        </p>
+                        <div class="proj-tags">
+                            <span>Python</span>
+                            <span>Speech Recognition</span>
+                            <span>Machine Learning</span>
+                            <span>Next.js</span>
+                            <span>Unity / 3D</span>
+                            <span>Tailwind CSS</span>
+                        </div>
+                        <div class="proj-buttons">
+                            <a href="https://github.com/sinananeefa" target="_blank" rel="noopener noreferrer" class="btn-proj-git">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/></svg>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://virtual-nurse-theta.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-proj-live">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                                <span>Live Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 03: LIYAURA Rental Platform -->
+                <div class="project-stack-card">
+                    <div class="project-inner-card">
+                        <div class="project-card-header">
+                            <span class="proj-badge">👗 Full Stack Django Platform</span>
+                            <span class="live-dot-badge"><span class="pulse-green"></span> Live Deployment</span>
+                        </div>
+                        <div class="proj-number-title">
+                            <span class="proj-num">03</span>
+                            <h3 class="proj-title">LIYAURA — Luxury Fashion Rental Portal</h3>
+                        </div>
+                        <p class="proj-desc">
+                            A production-grade role-based rental system with dedicated User, Owner, and Staff workflows. Features an interactive Owner Analytics Dashboard for live inventory, bookings, customer tracking, and offers. Implemented transaction locks (`select_for_update()`) for high-concurrency booking integrity.
+                        </p>
+                        <div class="proj-tags">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>MySQL / SQLite</span>
+                            <span>JavaScript</span>
+                            <span>HTML5 / CSS3</span>
+                            <span>Render</span>
+                        </div>
+                        <div class="proj-buttons">
+                            <a href="https://github.com/sinananeefa" target="_blank" rel="noopener noreferrer" class="btn-proj-git">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/></svg>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://liyaura.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn-proj-live">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                                <span>Live Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 04: AnalystEdge -->
+                <div class="flagship-project-card">
+                    <div class="project-inner-card">
+                        <div class="project-card-header">
+                            <span class="proj-badge">📊 AI Financial Intelligence</span>
+                            <span class="live-dot-badge"><span class="pulse-green"></span> Live Deployment</span>
+                        </div>
+                        <div class="proj-number-title">
+                            <span class="proj-num">04</span>
+                            <h3 class="proj-title">AnalystEdge — AI Financial Research Portal</h3>
+                        </div>
+                        <p class="proj-desc">
+                            AI-powered structured intelligence platform for earnings call transcripts and management discussions. Integrates Deep Scan OCR to handle scanned PDF documents, client-side zero-latency parsing up to 50 pages, and automated extraction of financial metrics, peer comparisons, and guidance sentiment.
+                        </p>
+                        <div class="proj-tags">
+                            <span>Next.js</span>
+                            <span>TypeScript</span>
+                            <span>Tailwind CSS</span>
+                            <span>AI Research Engine</span>
+                            <span>OCR / NLP</span>
+                            <span>Radix UI</span>
+                        </div>
+                        <div class="proj-buttons">
+                            <a href="https://github.com/sinananeefa" target="_blank" rel="noopener noreferrer" class="btn-proj-git">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/></svg>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://analystedge-seven.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-proj-live">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                                <span>Live Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 05: ZenFin Dashboard -->
+                <div class="project-stack-card">
+                    <div class="project-inner-card">
+                        <div class="project-card-header">
+                            <span class="proj-badge">💳 FinTech Analytics</span>
+                            <span class="live-dot-badge"><span class="pulse-green"></span> Live Deployment</span>
+                        </div>
+                        <div class="proj-number-title">
+                            <span class="proj-num">05</span>
+                            <h3 class="proj-title">ZenFin — Wealth &amp; Spending Analytics</h3>
+                        </div>
+                        <p class="proj-desc">
+                            Modern financial intelligence platform providing individuals and administrators with real-time wealth monitoring, balance trend visualizations, spending breakdown categories, categorized transaction tables, and actionable algorithmic financial optimization suggestions.
+                        </p>
+                        <div class="proj-tags">
+                            <span>Next.js</span>
+                            <span>React</span>
+                            <span>Tailwind CSS</span>
+                            <span>Recharts</span>
+                            <span>Financial Analytics</span>
+                            <span>Radix UI</span>
+                        </div>
+                        <div class="proj-buttons">
+                            <a href="https://github.com/sinananeefa" target="_blank" rel="noopener noreferrer" class="btn-proj-git">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/></svg>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://finance-eight-green-68.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-proj-live">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                                <span>Live Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 06: ForestGuard -->
+                <div class="project-stack-card">
+                    <div class="project-inner-card">
+                        <div class="project-card-header">
+                            <span class="proj-badge">🌲 Environmental Incident Warning</span>
+                            <span class="live-dot-badge"><span class="pulse-green"></span> Live Deployment</span>
+                        </div>
+                        <div class="proj-number-title">
+                            <span class="proj-num">06</span>
+                            <h3 class="proj-title">ForestGuard — Sahyadri-Samrakshane</h3>
+                        </div>
+                        <p class="proj-desc">
+                            A real-time forest and environmental incident reporting system designed for the Western Ghats. Allows rangers and citizens to report wildfires, landslides, illegal timber cutting, and wildlife sightings with exact GPS geotagging, photo evidence, and automated emergency safety protocols.
+                        </p>
+                        <div class="proj-tags">
+                            <span>JavaScript (ES6+)</span>
+                            <span>Geolocation API</span>
+                            <span>Incident Engine</span>
+                            <span>Responsive Web</span>
+                            <span>Vercel</span>
+                        </div>
+                        <div class="proj-buttons">
+                            <a href="https://github.com/sinananeefa" target="_blank" rel="noopener noreferrer" class="btn-proj-git">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/></svg>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://forest-flame.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-proj-live">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                                <span>Live Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 07: Labsense -->
+                <div class="project-stack-card">
+                    <div class="project-inner-card">
+                        <div class="project-card-header">
+                            <span class="proj-badge">🔬 Medical OCR &amp; NLP</span>
+                            <span class="live-dot-badge"><span class="pulse-green"></span> Core Architecture</span>
+                        </div>
+                        <div class="proj-number-title">
+                            <span class="proj-num">07</span>
+                            <h3 class="proj-title">Labsense — AI Healthcare Report Analyzer</h3>
+                        </div>
+                        <p class="proj-desc">
+                            Automated medical report extraction and data processing engine utilizing OCR and NLP techniques. Performs feature extraction on complex pathological documents to generate health risk indicators and intelligent hospital/specialist recommendations via Google Maps API.
+                        </p>
+                        <div class="proj-tags">
+                            <span>Python</span>
+                            <span>Tesseract OCR</span>
+                            <span>NLP</span>
+                            <span>Maps API</span>
+                            <span>Feature Extraction</span>
+                        </div>
+                        <div class="proj-buttons">
+                            <a href="https://github.com/sinananeefa" target="_blank" rel="noopener noreferrer" class="btn-proj-git">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/></svg>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://github.com/sinananeefa" target="_blank" rel="noopener noreferrer" class="btn-proj-live">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                                <span>Source Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Explore Repositories CTA -->
+            <div class="explore-repos-center">
+                <a href="https://github.com/sinananeefa" target="_blank" rel="noopener noreferrer" class="btn-explore-github">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/></svg>
+                    <span>Explore All Repositories on GitHub</span>
+                    <svg class="w-5 h-5 arrow-right" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. ACHIEVEMENTS & CERTIFICATIONS SECTION -->
+    <section id="achievements" class="awards-section">
+        <div class="max-w-6xl mx-auto px-6 relative z-10">
+            <div class="section-title-center">
+                <div class="sub-pill">Recognitions</div>
+                <h2 class="section-heading-white">Awards &amp; Certifications</h2>
+                <p class="section-sub-desc">Distinctions earned in competitive national hackathons and industry credentials.</p>
+            </div>
+
+            <div class="awards-grid">
+                <!-- Award 1 -->
+                <div class="award-box">
+                    <div class="award-badge-icon">💡</div>
+                    <div class="award-text">
+                        <span class="award-tag">Microsoft Problem Statement Winner</span>
+                        <h3 class="award-title">Runner-Up &mdash; ISTE Hackathon 2025</h3>
+                        <p class="award-desc">
+                            Built <strong>Talkeasy</strong>, an AI-powered regional language learning platform leveraging NLP, STT/TTS speech recognition, and gamified pronunciation scoring, solving the official Microsoft challenge.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Award 2 -->
+                <div class="award-box">
+                    <div class="award-badge-icon">⭐</div>
+                    <div class="award-text">
+                        <span class="award-tag">Top 10% Decile</span>
+                        <h3 class="award-title">Merit Holder &mdash; IIT Kharagpur &amp; TCS iON</h3>
+                        <p class="award-desc">
+                            Awarded Top 10% distinction for "Hands-on AI for Real-World Applications" (Jul&ndash;Oct 2024), demonstrating applied competence in neural networks, computer vision, and machine learning pipelines.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications List -->
+            <div class="certifications-card">
+                <h3 class="certs-headline">Industry Certifications</h3>
+                <div class="certs-grid">
+                    <div class="cert-pill">
+                        <span class="cert-icon">📜</span>
+                        <div class="cert-info">
+                            <strong>Generative AI Professional</strong>
+                            <span>Oracle</span>
+                        </div>
+                    </div>
+                    <div class="cert-pill">
+                        <span class="cert-icon">📜</span>
+                        <div class="cert-info">
+                            <strong>AI Foundations Associate</strong>
+                            <span>Oracle</span>
+                        </div>
+                    </div>
+                    <div class="cert-pill">
+                        <span class="cert-icon">📜</span>
+                        <div class="cert-info">
+                            <strong>Introduction to Modern AI</strong>
+                            <span>Cisco</span>
+                        </div>
+                    </div>
+                    <div class="cert-pill">
+                        <span class="cert-icon">📜</span>
+                        <div class="cert-info">
+                            <strong>Introduction to Cybersecurity</strong>
+                            <span>Cisco</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. GET IN TOUCH / CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+        <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
+            <div class="sub-pill">Get in Touch</div>
+            <h2 class="contact-headline">Let's Build Something <br><span class="highlight-crimson">Impactful Together</span></h2>
+            <p class="contact-subtext">
+                Whether you have an open Full Stack or AI/ML position, a consulting query, or an exciting project idea &mdash; my inbox is always open.
+            </p>
+
+            <!-- Quick Contact Channels Cards -->
+            <div class="contact-cards-container">
+                <a href="mailto:sinanhaneef09@gmail.com" class="channel-card">
+                    <div class="channel-icon">✉️</div>
+                    <div class="channel-body">
+                        <span class="channel-name">Email</span>
+                        <span class="channel-val">sinanhaneef09@gmail.com</span>
+                    </div>
+                </a>
+
+                <a href="tel:+919496595249" class="channel-card">
+                    <div class="channel-icon">📞</div>
+                    <div class="channel-body">
+                        <span class="channel-name">Phone</span>
+                        <span class="channel-val">+91-9496595249</span>
+                    </div>
+                </a>
+
+                <a href="https://linkedin.com/in/muhammed-sinan-aneefa-08bb61269" target="_blank" rel="noopener noreferrer" class="channel-card">
+                    <div class="channel-icon">💼</div>
+                    <div class="channel-body">
+                        <span class="channel-name">LinkedIn</span>
+                        <span class="channel-val">in/muhammed-sinan-aneefa</span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/sinananeefa" target="_blank" rel="noopener noreferrer" class="channel-card">
+                    <div class="channel-icon">💻</div>
+                    <div class="channel-body">
+                        <span class="channel-name">GitHub</span>
+                        <span class="channel-val">github.com/sinananeefa</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Primary Contact Buttons -->
+            <div class="contact-action-row">
+                <a href="mailto:sinanhaneef09@gmail.com" class="btn-email-primary">
+                    <span>Send Me an Email</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </a>
+                <a href="Full-Stack-Developer.pdf" target="_blank" download class="btn-download-resume-red">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                    <span>Download Resume (PDF)</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. FOOTER -->
+    <footer class="footer-bar">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="footer-brand">
+                <a href="#hero" class="footer-logo">MSA<span>.dev</span></a>
+                <p class="footer-tagline">Muhammed Sinan Aneefa &mdash; Full Stack Developer &amp; AI/ML Engineer</p>
+            </div>
+            <div class="footer-nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skillset</a>
+                <a href="#process">Process</a>
+                <a href="#projects">Work</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 Muhammed Sinan Aneefa. Built with passion &amp; precision.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
