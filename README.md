@@ -1,40 +1,47 @@
-# Muhammed Sinan Aneefa — Interactive Portfolio
+# Muhammed Sinan Aneefa — Full Stack Developer & AI Engineer Portfolio
 
-A modern, ultra-responsive, and high-performance developer portfolio showcasing full-stack applications, AI/ML integrations, and interactive web architecture.
+A modern, precision-crafted, single-page developer portfolio designed in the style and structure of **muhammadsahal.vercel.app**. Built with semantic HTML5, Vanilla CSS design system (Dark & Light theme engine), GSAP + ScrollTrigger choreography, and Lenis smooth momentum scrolling.
 
 ## 🚀 Live Demo & Projects
-- **Portfolio Live:** [https://github.com/sinananeefa/Portfolio](https://github.com/sinananeefa/Portfolio)
-- **Virtual Nurse:** [https://virtual-nurse-theta.vercel.app/](https://virtual-nurse-theta.vercel.app/)
-- **Liyaura Natural Care:** [https://liyaura.onrender.com/](https://liyaura.onrender.com/)
-- **Talk Lemon (Realtime Chat):** [https://talk-lemon.vercel.app/](https://talk-lemon.vercel.app/)
-- **Forest Flame Resort:** [https://forest-flame.vercel.app/](https://forest-flame.vercel.app/)
-- **Finance Flow:** [https://finance-eight-green-68.vercel.app/](https://finance-eight-green-68.vercel.app/)
-- **AnalystEdge AI:** [https://analystedge-seven.vercel.app/](https://analystedge-seven.vercel.app/)
+- **Talkeasy AI Platform (Winner &bull; Microsoft Challenge 2025):** [https://talk-lemon.vercel.app/](https://talk-lemon.vercel.app/)
+- **Virtual Nurse (AR-NurSys Healthcare AI):** [https://virtual-nurse-theta.vercel.app/](https://virtual-nurse-theta.vercel.app/)
+- **Liyaura Luxury Rental Portal:** [https://liyaura.onrender.com/](https://liyaura.onrender.com/)
+- **AnalystEdge AI Financial Intelligence:** [https://analystedge-seven.vercel.app/](https://analystedge-seven.vercel.app/)
+- **Forest Flame Boutique Resort:** [https://forest-flame.vercel.app/](https://forest-flame.vercel.app/)
+- **Finance Flow App:** [https://finance-eight-green-68.vercel.app/](https://finance-eight-green-68.vercel.app/)
 
-## 🛠️ Tech Stack & Features
-- **Frontend Core:** Vanilla HTML5, Modern CSS3 (Obsidian Void & Solar Ember theme), Vanilla JavaScript (ES6+)
-- **Interactive Matrix:** Real-time dynamic canvas particle network with responsive mouse & touch mechanics
-- **Interactive 3D Badge:** Physics-based tilt card with lanyard and specular lighting
-- **Responsive Layout:** 100% fluid across all mobile, tablet, and desktop viewports
-- **Zero Framework Bloat:** Ultra-fast load times, semantic SEO optimization, accessible ARIA attributes
+## ✨ Architecture & Key Features
+- **Interactive Preloader:** `LOADING... 0%` counter animated to `100%` with a smooth reveal fade.
+- **Dark & Light Mode Switcher:** One-click theme toggle with seamless CSS token transitions and `localStorage` persistence.
+- **Hero Ken Burns Slider:** Auto-rotating project photo crossfade background with slow zoom animation (`scale 1 → 1.08`).
+- **Standardized Section Tags:** Monospace `[00N / SECTIONNAME]` tags site-wide (`[01 / HERO]`, `[02 / ABOUT]`, `[03 / SKILLS]`, `[04 / SELECTED WORK]`, `[05 / OTHER PROJECTS]`, `[06 / EXPERIENCE]`, `[07 / CONTACT]`).
+- **Alternating Direction Marquees:** Dual continuous auto-scrolling strips (forward & reverse) with hover-pause mechanics.
+- **7 Numbered Skill Subsections:** Programming Languages, Frontend Engineering, Backend & API Architecture, Databases & ORM, DevOps & Cloud, Core Concepts, and AI / Emerging Tech with staggered card animations.
+- **Selected Work & Other Projects:** Cards with project preview photos, category + year tags, status pills, and `CASE STUDY` badges.
+- **Experience Timeline & Credentials:** Vertical industry timeline (Emdata Networks), formal education (B.E. AIML, CGPA 8.29), hackathon honors, and verified certifications (Oracle & Cisco).
+- **Direct WhatsApp Messaging:** Real-time form encoder generating prefilled `wa.me` links directly to your WhatsApp.
+- **Copy-to-Clipboard Buttons:** One-click copy for email and phone numbers with animated "Copied!" feedback.
 
 ## 📁 Project Structure
 ```
-├── index.html                  # Core markup and semantic sections
-├── styles.css                  # Custom design system, responsive grids, and animations
-├── script.js                   # Interactive canvas, tilt physics, mobile drawer, scroll-spy
-├── profile.jpeg                # Author avatar image
-├── Full-Stack-Developer.pdf    # Resume / CV download asset
+├── index.html                  # Semantic single-page layout & structure
+├── styles.css                  # Dark & Light design system, typography, animations
+├── script.js                   # Preloader, Theme engine, Slider, Lenis & GSAP triggers
+├── Full-Stack-Developer.pdf    # Direct CV / Resume download asset
+├── assets/
+│   └── projects/               # High-resolution project preview screenshots
+│       ├── talkeasy.jpg
+│       ├── virtual-nurse.jpg
+│       ├── liyaura.jpg
+│       ├── analystedge.jpg
+│       ├── forest-flame.jpg
+│       └── finance-flow.jpg
 └── README.md                   # Documentation
 ```
 
-## 💻 Local Development
-Simply clone this repository and open `index.html` in any modern web browser, or serve it using Python or Vite:
+## 💻 Local Preview
+To preview locally, launch any static HTTP server:
 ```bash
-# Clone repository
-git clone https://github.com/sinananeefa/Portfolio.git
-
-# Serve locally
 python -m http.server 4173
 ```
-Then navigate to `http://localhost:4173`.
+Then open `http://localhost:4173` in your web browser.
